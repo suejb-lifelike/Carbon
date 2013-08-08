@@ -32,7 +32,7 @@ class StringsTest extends TestFixture
    public function testToLocalizedFormattedDateString()
    {
       $cache = setlocale(LC_TIME, 0);
-      setlocale(LC_TIME, 'German');
+      setlocale(LC_TIME, 'german', 'de_DE@euro', 'de_DE', 'de', 'ge');
       $d = Carbon::create(1975, 12, 25, 14, 15, 16);
       $this->assertSame('Donnerstag 25 Dezember 1975', $d->formatLocalized('%A %d %B %Y'));
       setlocale(LC_TIME, $cache);
