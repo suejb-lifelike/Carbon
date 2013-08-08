@@ -7,5 +7,6 @@ php:
 
 before_script:
   - composer install
+  - locale -a
 
 script: phpunit --coverage-text
