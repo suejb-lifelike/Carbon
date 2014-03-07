@@ -88,7 +88,7 @@ class Carbon extends DateTime
       '-',
       'first',
       'last',
-      'ago'
+      'më parë'
     );
 
    /**
@@ -1742,7 +1742,7 @@ class Carbon extends DateTime
             return $txt . ' from now';
          }
 
-         return $txt . ' ago';
+         return $txt . ' më parë';
       }
 
       if ($isFuture) {
